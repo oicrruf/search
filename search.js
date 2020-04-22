@@ -1,3 +1,76 @@
+let img = [
+    {
+        file: '1.png',
+        type: 'category-main',
+        url: '#'
+    },
+    {
+        file: '2.png',
+        type: 'category-main',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '3.png',
+        type: 'category-carrousel',
+        url: '#'
+    },
+    {
+        file: '4.png',
+        type: 'category-top-seller',
+        url: '#'
+    },
+    {
+        file: '5.png',
+        type: 'category-most-wanted',
+        url: '#'
+    },
+    {
+        file: '6.png',
+        type: 'category-footer',
+        url: '#'
+    }
+]
+
 jQuery(document).ready(() => {
 
     let navbar = jQuery('.vc_row.wpb_row.vc_row-fluid.header-middle').height()
@@ -12,8 +85,6 @@ jQuery(document).ready(() => {
 
     jQuery('#search-movil').click(
 
-
-
         async () => {
             let banner = () => {
                 $('.multiple-items').slick({
@@ -23,100 +94,28 @@ jQuery(document).ready(() => {
 
                 $('.swal2-actions').appendTo('#search-form');
 
-                let img = [
-                    {
-                        file: '1.png',
-                        type: 'category-main',
-                        url: '#'
-                    },
-                    {
-                        file: '2.png',
-                        type: 'category-main',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '3.png',
-                        type: 'category-carrousel',
-                        url: '#'
-                    },
-                    {
-                        file: '4.png',
-                        type: 'category-top-seller',
-                        url: '#'
-                    },
-                    {
-                        file: '5.png',
-                        type: 'category-most-wanted',
-                        url: '#'
-                    },
-                    {
-                        file: '6.png',
-                        type: 'category-footer',
-                        url: '#'
-                    }
-                ]
-
-                img.forEach(img => {
-                    switch (img.type) {
+                img.forEach((banner, i) => {
+                    switch (banner.type) {
                         case 'category-main':
-                            jQuery('#category-main').append(`<a href="${img.url}"><img class="img-responsive c-main" src="img/${img.file}"/></a>`)
+                            jQuery('#category-main').append(`<a href="${banner.url}"><img class="img-responsive c-main" src="img/${banner.file}"/></a>`)
                             break;
                         case 'category-carrousel':
-                            jQuery('#category-carrousel').append(`<li><a href="${img.url}"><img src="img/${img.file}"/></a></li>`)
+                            jQuery('#category-carrousel').append(`<li><a href="${banner.url}"><img src="img/${banner.file}"/></a></li>`)
                             break;
                         case 'category-top-seller':
-                            jQuery('#category-top-and-most').append(`<a href="${img.url}"><img class="img-responsive c-top-seller" src="img/${img.file}"/></a>`)
+                            jQuery('#category-top-and-most').append(`<a href="${banner.url}"><img class="img-responsive c-top-seller" src="img/${banner.file}"/></a>`)
                             break;
                         case 'category-most-wanted':
-                            jQuery('#category-top-and-most').append(`<a href="${img.url}"><img class="img-responsive c-most-wanted" src="img/${img.file}"/></a>`)
+                            jQuery('#category-top-and-most').append(`<a href="${banner.url}"><img class="img-responsive c-most-wanted" src="img/${banner.file}"/></a>`)
                             break;
                         case 'category-footer':
-                            jQuery('#category-footer').append(`<a href="${img.url}"><img class="img-responsive" src="img/${img.file}"/></a>`)
+                            jQuery('#category-footer').append(`<a href="${banner.url}"><img class="img-responsive" src="img/${banner.file}"/></a>`)
                             break;
                         default:
                             break;
                     }
                 })
+                document.getElementById('input-search').focus();
             }
             const { value: search } = await Swal.fire({
                 position: 'center',
@@ -127,7 +126,10 @@ jQuery(document).ready(() => {
                 html: `
                 <img src="http://funko.x-dev.net/wp-content/uploads/2016/10/LOGO-FUNKO-FINDERS-FINALISIMO-PRIMERO-DIOS-AHORA-SI-EL-ULTIMO.png" />
                 <div id="search-form">
-                <input name="title" id="input-search" class="swal2-input" type="text" placeholder="Search"> 
+                <div id="input-search-box">
+                <span><i class="fas fa-search"></i></span>
+                <input id="input-search" name="search"  class="swal2-input" type="text"> 
+                </div>
                 </div>
                 <div id="category-main"></div>
                 <ul id="category-carrousel"></ul>
@@ -141,7 +143,7 @@ jQuery(document).ready(() => {
                         document.getElementById('input-search').value,
                     ]
                 }
-            })
+            });
             if (search) {
                 let values = {
                     search: search[0],
