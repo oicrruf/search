@@ -99,19 +99,19 @@ jQuery(document).ready(() => {
                 img.forEach(img => {
                     switch (img.type) {
                         case 'category-main':
-                            jQuery('#category-main').append(`<a href="${img.url}"><img class="img-responsive c-main" src="./img/${img.file}"/></a>`)
+                            jQuery('#category-main').append(`<a href="${img.url}"><img class="img-responsive c-main" src="img/${img.file}"/></a>`)
                             break;
                         case 'category-carrousel':
-                            jQuery('#category-carrousel').append(`<li><a href="${img.url}"><img src="./img/${img.file}"/></a></li>`)
+                            jQuery('#category-carrousel').append(`<li><a href="${img.url}"><img src="img/${img.file}"/></a></li>`)
                             break;
                         case 'category-top-seller':
-                            jQuery('#category-top-and-most').append(`<a href="${img.url}"><img class="img-responsive c-top-seller" src="./img/${img.file}"/></a>`)
+                            jQuery('#category-top-and-most').append(`<a href="${img.url}"><img class="img-responsive c-top-seller" src="img/${img.file}"/></a>`)
                             break;
                         case 'category-most-wanted':
-                            jQuery('#category-top-and-most').append(`<a href="${img.url}"><img class="img-responsive c-most-wanted" src="./img/${img.file}"/></a>`)
+                            jQuery('#category-top-and-most').append(`<a href="${img.url}"><img class="img-responsive c-most-wanted" src="img/${img.file}"/></a>`)
                             break;
                         case 'category-footer':
-                            jQuery('#category-footer').append(`<a href="${img.url}"><img class="img-responsive" src="./img/${img.file}"/></a>`)
+                            jQuery('#category-footer').append(`<a href="${img.url}"><img class="img-responsive" src="img/${img.file}"/></a>`)
                             break;
                         default:
                             break;
