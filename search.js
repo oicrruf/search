@@ -71,13 +71,22 @@ let img = [
     }
 ]
 
+let size = null;
+
 jQuery(document).ready(() => {
 
-    let navbar = jQuery('.vc_row.wpb_row.vc_row-fluid.header-middle').height()
+    let navbar = jQuery('.vc_row.wpb_row.vc_row-fluid.header-middle').height();
+
+    jQuery(window).resize(function () {
+        size = jQuery(window).width()
+    })
 
     jQuery(window).scroll((e) => {
         if (jQuery(this).scrollTop() > navbar) {
-            jQuery('#search-movil').css('visibility', 'visible');
+            if (size < 992) {
+                jQuery('#search-movil').css('visibility', 'visible');
+            }
+
         } else if (jQuery(this).scrollTop() <= navbar) {
             jQuery('#search-movil').css('visibility', 'hidden');
         }
@@ -124,6 +133,7 @@ jQuery(document).ready(() => {
                 showCloseButton: true,
                 confirmButtonText: 'Search products',
                 html: `
+                <div class="container">
                 <img src="http://funko.x-dev.net/wp-content/uploads/2016/10/LOGO-FUNKO-FINDERS-FINALISIMO-PRIMERO-DIOS-AHORA-SI-EL-ULTIMO.png" />
                 <div id="search-form">
                 <div id="input-search-box">
@@ -135,6 +145,7 @@ jQuery(document).ready(() => {
                 <ul id="category-carrousel"></ul>
                 <div id="category-top-and-most"></div>
                 <div id="category-footer"></div>
+                </div>
                 `,
                 focusConfirm: false,
                 onOpen: banner,

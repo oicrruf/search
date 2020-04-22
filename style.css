@@ -14,9 +14,9 @@ body {
   margin: 0px;
   background: #6666ff !important;
   border: none;
-  -webkit-box-shadow: 0px 3px 17px 5px rgba(245, 245, 245, 1);
-  -moz-box-shadow: 0px 3px 17px 5px rgba(245, 245, 245, 1);
-  box-shadow: 0px 3px 17px 5px rgba(245, 245, 245, 1);
+  -webkit-box-shadow: 0px 3px 17px 5px rgba(122, 122, 122, 0.4);
+  -moz-box-shadow: 0px 3px 17px 5px rgba(122, 122, 122, 0.4);
+  box-shadow: 0px 3px 17px 5px rgba(122, 122, 122, 0.4);
   position: fixed;
   bottom: 0;
   right: 0;
@@ -35,7 +35,7 @@ body {
 .swal2-popup.swal2-modal.swal2-show {
   min-height: 100%;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
 }
 
 .swal2-popup.swal2-modal.swal2-show img {
@@ -74,6 +74,7 @@ body {
 
 #input-search-box span i {
     color: #c9c9c9;
+    font-size: 1.5rem;;
 }
 
 .c-main,
@@ -142,7 +143,14 @@ li:last-child {
 }
 
 li img {
-  width: 125px;
+  width: 35%;
   margin-top: 12.656px !important;
   margin-bottom: 0px !important;
+}
+
+.swal2-close{
+    padding: 25px;
+    padding-right: 40px;
+    color: #6666ff;
+    font-size: 3rem;
 }
