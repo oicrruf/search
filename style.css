@@ -1,0 +1,136 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-header {
+  height: 60px !important;
+  background: #6666ff !important;
+}
+
+#search-movil {
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  background: #6666ff !important;
+  border: none;
+  -webkit-box-shadow: 0px 3px 17px 5px rgba(245, 245, 245, 1);
+  -moz-box-shadow: 0px 3px 17px 5px rgba(245, 245, 245, 1);
+  box-shadow: 0px 3px 17px 5px rgba(245, 245, 245, 1);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 20px 0px;
+  visibility: hidden;
+}
+
+#search-movil i {
+  padding: 20px;
+  font-size: 2rem;
+}
+.swal2-container.swal2-center.swal2-backdrop-show {
+  padding: 0px;
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+
+.swal2-popup.swal2-modal.swal2-show img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.swal2-actions {
+  margin: 0px;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #6666ff;
+  font-size: 1.3em;
+  width: 100%;
+  margin: 0px;
+}
+
+#input-search {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #6666ff;
+}
+
+.c-main,
+.c-carrousel,
+.c-top-seller,
+.c-most-wanted {
+  display: inline;
+}
+.c-top-seller,
+.c-most-wanted,
+.c-main {
+  width: 50%;
+}
+
+.c-carrousel {
+  width: 33.33%;
+}
+
+#category-footer img,
+#category-top-and-most img,
+#category-carrousel img,
+#category-main img {
+  margin: 0px;
+  margin-top: 12.656px;
+}
+
+#category-main img {
+  margin-top: 12.656px;
+}
+
+a:first-child .c-main,
+.c-top-seller {
+  padding-right: 8px;
+}
+a:last-child .c-main,
+.c-most-wanted {
+  padding-left: 8px;
+}
+
+a .c-carrousel {
+  padding-right: 10px;
+}
+a .c-carrousel:last-child {
+  padding: 0px;
+}
+
+#category-carrousel {
+  padding-bottom: 12.656px !important;
+  border-bottom: 1.5px solid #a1a1ff;
+}
+
+ul#category-carrousel{
+    padding: 0px;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0px;
+}
+
+li{
+    list-style:none;
+    display: inline;
+    margin-right: 10px;
+}
+li:last-child{
+    margin-right: 0px;
+}
+
+li img {
+    width: 150px;
+    margin-top: 12.656px !important;
+    margin-bottom: 0px !important;
+}
+
+li img::scrollbar {
+    display: none !important;
+}
