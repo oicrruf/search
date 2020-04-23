@@ -71,10 +71,11 @@ let img = [
     }
 ]
 
-let size = null;
 
 jQuery(document).ready(() => {
-
+    
+    let size = null;
+    
     let navbar = jQuery('.vc_row.wpb_row.vc_row-fluid.header-middle').height();
 
     jQuery(window).resize(function () {
@@ -97,7 +98,7 @@ jQuery(document).ready(() => {
         async () => {
             let banner = () => {
 
-                $('.swal2-actions').appendTo('#search-form');
+                jQuery('.swal2-actions').appendTo('#search-form');
 
                 img.forEach((banner, i) => {
                     switch (banner.type) {
