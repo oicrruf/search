@@ -96,10 +96,6 @@ jQuery(document).ready(() => {
 
         async () => {
             let banner = () => {
-                $('.multiple-items').slick({
-                    slideToShow: 3,
-                    arrows: false,
-                })
 
                 $('.swal2-actions').appendTo('#search-form');
 
@@ -124,9 +120,13 @@ jQuery(document).ready(() => {
                             break;
                     }
                 })
+                
                 document.getElementById('input-search').focus();
+
             }
+            
             const { value: search } = await Swal.fire({
+                onOpen: banner,
                 position: 'center',
                 showConfirmButton: true,
                 showCancelButton: false,
@@ -148,7 +148,6 @@ jQuery(document).ready(() => {
                 </div>
                 `,
                 focusConfirm: false,
-                onOpen: banner,
                 preConfirm: () => {
                     return [
                         document.getElementById('input-search').value,
