@@ -1,71 +1,61 @@
 let img = [
     {
-        file: '1.png',
+        file: 'main-disney.png',
         type: 'category-main',
         url: '#'
     },
     {
-        file: '2.png',
+        file: 'main-marvel.png',
         type: 'category-main',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'animation.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'dc.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'got.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'harry-potter.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'movies.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'star-wars.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
+        file: 'television.png',
         type: 'category-carrousel',
         url: '#'
     },
     {
-        file: '3.png',
-        type: 'category-carrousel',
-        url: '#'
-    },
-    {
-        file: '3.png',
-        type: 'category-carrousel',
-        url: '#'
-    },
-    {
-        file: '4.png',
+        file: 'top-seller.png',
         type: 'category-top-seller',
         url: '#'
     },
     {
-        file: '5.png',
+        file: 'most-wanted.png',
         type: 'category-most-wanted',
         url: '#'
     },
     {
-        file: '6.png',
+        file: 'footer.png',
         type: 'category-footer',
         url: '#'
     }
@@ -75,7 +65,7 @@ let img = [
 jQuery(document).ready(() => {
     
     let size = null;
-    
+
     let navbar = jQuery('.vc_row.wpb_row.vc_row-fluid.header-middle').height();
 
     jQuery(window).resize(function () {
