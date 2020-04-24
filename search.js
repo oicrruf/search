@@ -96,7 +96,7 @@ jQuery(document).ready(() => {
                             jQuery('#category-main').append(`<a href="${banner.url}"><img class="img-responsive c-main" src="img/${banner.file}"/></a>`)
                             break;
                         case 'category-carrousel':
-                            jQuery('#category-carrousel').append(`<li><a href="${banner.url}"><img src="img/${banner.file}"/></a></li>`)
+                            jQuery('#category-carrousel').append(`<li><a href="${banner.url}"><img class="c-carrousel" src="img/${banner.file}"/></a></li>`)
                             break;
                         case 'category-top-seller':
                             jQuery('#category-top-and-most').append(`<a href="${banner.url}"><img class="img-responsive c-top-seller" src="img/${banner.file}"/></a>`)
@@ -104,9 +104,10 @@ jQuery(document).ready(() => {
                         case 'category-most-wanted':
                             jQuery('#category-top-and-most').append(`<a href="${banner.url}"><img class="img-responsive c-most-wanted" src="img/${banner.file}"/></a>`)
                             break;
-                        case 'category-footer':
-                            jQuery('#category-footer').append(`<a href="${banner.url}"><img class="img-responsive" src="img/${banner.file}"/></a>`)
-                            break;
+                            // case 'category-footer':
+                            //     jQuery('#category-footer').append(`<a href="${banner.url}"><img class="img-responsive" src="img/${banner.file}"/></a>`)
+                            //     break;
+                            //<div id="category-footer"></div>
                         default:
                             break;
                     }
@@ -124,7 +125,7 @@ jQuery(document).ready(() => {
                 showCloseButton: true,
                 confirmButtonText: 'Search products',
                 html: `
-                <div class="container">
+                <div id="search-content" class="container">
                 <img src="http://funko.x-dev.net/wp-content/uploads/2016/10/LOGO-FUNKO-FINDERS-FINALISIMO-PRIMERO-DIOS-AHORA-SI-EL-ULTIMO.png" />
                 <div id="search-form">
                 <div id="input-search-box">
@@ -135,7 +136,6 @@ jQuery(document).ready(() => {
                 <div id="category-main"></div>
                 <ul id="category-carrousel"></ul>
                 <div id="category-top-and-most"></div>
-                <div id="category-footer"></div>
                 </div>
                 `,
                 focusConfirm: false,
