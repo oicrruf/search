@@ -96,7 +96,7 @@ jQuery(document).ready(() => {
                             jQuery('#category-main').append(`<a href="${banner.url}"><img class="img-responsive c-main" src="img/${banner.file}"/></a>`)
                             break;
                         case 'category-carrousel':
-                            jQuery('#category-carrousel').append(`<li><a href="${banner.url}"><img class="c-carrousel" src="img/${banner.file}"/></a></li>`)
+                            jQuery('#category-carrousel').append(`<li class="c-carrousel"><a href="${banner.url}"><img src="img/${banner.file}"/></a></li>`)
                             break;
                         case 'category-top-seller':
                             jQuery('#category-top-and-most').append(`<a href="${banner.url}"><img class="img-responsive c-top-seller" src="img/${banner.file}"/></a>`)
