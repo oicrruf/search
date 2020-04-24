@@ -38,7 +38,7 @@ body {
   padding: 10px;
 }
 
-.swal2-popup.swal2-modal.swal2-show img {
+img.search-log {
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -92,10 +92,10 @@ body {
   width: 50%;
 }
 
-#category-footer img,
 #category-top-and-most img {
   margin: 0px;
   margin-top: 12px;
+  margin-bottom: 25px;
 }
 
 #category-main a img{
@@ -162,4 +162,9 @@ li.c-carrousel a img{
 
 li.c-carrousel:last-child a img{
   padding-right: 0px !important;
+}
+
+.swal2-content{
+  max-width: 600px;
+  margin: auto;
 }

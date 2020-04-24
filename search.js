@@ -125,18 +125,16 @@ jQuery(document).ready(() => {
                 showCloseButton: true,
                 confirmButtonText: 'Search products',
                 html: `
-                <div id="search-content" class="container">
-                <img src="http://funko.x-dev.net/wp-content/uploads/2016/10/LOGO-FUNKO-FINDERS-FINALISIMO-PRIMERO-DIOS-AHORA-SI-EL-ULTIMO.png" />
+                <img class="search-log" src="http://funko.x-dev.net/wp-content/uploads/2016/10/LOGO-FUNKO-FINDERS-FINALISIMO-PRIMERO-DIOS-AHORA-SI-EL-ULTIMO.png" />
                 <div id="search-form">
                 <div id="input-search-box">
                 <span><i class="fas fa-search"></i></span>
-                <input id="input-search" name="search"  class="swal2-input" type="text"> 
+                <input id="input-search" name="search"  class="swal2-input" type="text" placeholder="What Funko Pop! R U looking 4?"> 
                 </div>
                 </div>
                 <div id="category-main"></div>
                 <ul id="category-carrousel"></ul>
                 <div id="category-top-and-most"></div>
-                </div>
                 `,
                 focusConfirm: false,
                 preConfirm: () => {
