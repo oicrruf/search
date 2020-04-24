@@ -131,7 +131,6 @@ a:last-child .c-main,
 #category-carrousel {
   padding: 0px;
   margin: 0px;
-  border-bottom: 1.5px solid #a1a1ff;
 }
 
 ul#category-carrousel, 
@@ -153,7 +152,7 @@ li.c-carrousel {
 
 li.c-carrousel a img{
   width: 40%;
-  margin: 12px 0px 12px 0px !important;
+  margin: 12px 0px 0px 0px !important;
 }
 
 li.c-carrousel a img{
