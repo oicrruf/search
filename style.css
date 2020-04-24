@@ -166,3 +166,8 @@ li.c-carrousel:last-child a img{
   max-width: 600px;
   margin: auto;
 }
+
+#category-main a img, 
+#category-top-and-most a img {
+  height: 150px;
+}
